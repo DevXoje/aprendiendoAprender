@@ -120,15 +120,16 @@ header .categorias li a.actual{
 	display: none;
 	align-items: center;
 	justify-content:center;
-	flex-direction: column;
 }
 
-.overlay.activo{
+.overlay.active{
 	display: flex;
 }
 
 .overlay .wrapper-img{
-	display: block;
+	display: flex;
+	flex-direction: column;
+	position: relative;
 }
 
 .overlay .wrapper-img .description{
@@ -137,14 +138,12 @@ header .categorias li a.actual{
 	padding: 20px;
 	text-align: center;
 	margin-top: 5px;
+	margin-left: 25%;
 	border-radius: 10px;
-	max-width: 70%;
+	max-width: 50%;
 	
 }
 
-.wrapper-img{
-	/*Hay que ajustarlo para que la X se quede dentro de la img*/
-}
 
 .overlay #btn_close-popup{
 	background: none;

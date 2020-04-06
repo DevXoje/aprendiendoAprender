@@ -18,7 +18,7 @@ function main() {
 	const searcher=document.getElementById("barra-busqueda");
 	filtrarPorCategoria(enlaces);
 	
-	//filtrarPorKeywords(searcher);
+	filtrarPorKeywords(searcher);
 
 	
 }
@@ -39,8 +39,8 @@ function filtrarPorCategoria(list=new NodeList()) {
 function filtrarPorKeywords(searcher=new HTMLElement()) {
 	searcher.addEventListener("input",(event)=>{
 		const input=event.target.value;
-		/*Includes No va ... */
-		///grid.filter((item)=>item.getElement().dataset.keywords.includes(input));
+		/*Includes No iva ...ARREGLADO creo que era xk no todos los elementos tenian ese dataset*/
+		grid.filter((item)=>item.getElement().dataset.keywords.includes(input));
 		
 		
 	});
