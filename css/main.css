@@ -145,7 +145,7 @@ header .categorias li a.actual{
 }
 
 
-.overlay #btn_close-popup{
+.overlay #btn-cerrar-popup{
 	background: none;
 	font-size: 20px;
 	color: #fff;
@@ -153,4 +153,70 @@ header .categorias li a.actual{
 	cursor: pointer;
 	position: absolute;
 	right: 0;
+}
+
+/*Footer*/
+
+footer .redes-sociales{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	padding: 20px;
+	flex-wrap: wrap;	
+}
+
+footer .redes-sociales a{
+	display: block;
+	width: 60px;
+	height: 60px;
+	background-color: #000;
+	margin: 20px;
+	text-align: center;
+	color: #FFF;
+	border-radius: 100px;
+	transition: .3s ease all;
+
+}
+
+footer .redes-sociales .twitter{
+	background-color: #1da1f2;
+}
+footer .redes-sociales .youtube{
+	background-color: #c4302b;
+}
+footer .redes-sociales .twitch{
+	background-color: #6441a5;
+}
+
+footer .redes-sociales a i{
+	font-size: 20px;
+	line-height: 60px;
+}
+
+footer .contenedor-icono:hover a{
+	animation: icono 1.5s ease;
+}
+
+@keyframes icono{
+	from{
+		transform:rotate3d(0,0,0,0);
+	}
+	to{
+		transform:rotate3d(0,1,0,360deg);
+	}
+}
+
+footer .autor{
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 14px;
+	color: #c13584;
+}
+
+footer .autor a{
+	color:#000;
+}
+
+footer .autor a:hover{
+	text-decoration: underline;
 }
