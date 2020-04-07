@@ -5,7 +5,7 @@
 window.addEventListener("load",mainSwitch);
 
 function mainSwitch() {
-	
+	setStylesSwitch();
 	const header=document.getElementsByTagName("hgroup")[0];
 	
 	const btnSwitch=createBtnSwitch(header);
@@ -21,22 +21,34 @@ function mainSwitch() {
 		}
 	});
 }
+
+function setStylesSwitch() {
+	var head  = document.getElementsByTagName('head')[0];
+    var link  = document.createElement('link');
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = './css/switchModoNoche.css';
+    head.appendChild(link);
+}
+
 function createBtnSwitch(elemtBefore=new HTMLElement()){
 
 	var btn,wrapper,item;
-
 	btn=document.createElement("button");
-	btn.classList.add("switch");
-
 	wrapper=document.createElement("span");
 	item=document.createElement("i");
+
+	btn.classList.add("switch");
 	item.classList.add("far","fa-sun");
+
 	wrapper.appendChild(item);
 	btn.appendChild(wrapper);
 
 	wrapper=document.createElement("span");
 	item=document.createElement("i");
+
 	item.classList.add("fas","fa-moon");
+	
 	wrapper.appendChild(item);
 	btn.appendChild(wrapper);
 

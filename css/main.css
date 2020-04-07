@@ -26,7 +26,7 @@ a{
 	text-decoration: none;
 }
 
-.mainWrapper{
+.wrapperContent{
 	width: 90%;
 	max-width: 800px;/*Depende numero de fotos que quiera*/
 	margin: auto;
@@ -50,48 +50,7 @@ header .logo h2{
 	color: #989898;
 }
 
-/*Swith modo noche*/
-
-.switch{
-	background-color: rgb(52, 61, 91);
-	border-radius: 1000px;
-	border: none;
-	position: absolute;
-	cursor: pointer;
-	display: flex;
-	outline: none;
-}
-.switch::after{
-	content: "";
-	display: block;
-	width: 30px;
-	height: 30px;
-	position: absolute;
-	background-color: #f1f1f1;
-	top:0;
-	left: 0;
-	right: unset;
-	border-radius: 100px;
-	transition: .3s ease all;
-	box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
-}
-.switch.active{
-	background-color: orange;
-	color: black;
-}
-.switch.active::after{
-	left: unset;
-	right: 0;
-}
-.switch span{
-	width: 30px;
-	height: 30px;
-	line-height: 30px;
-	display: block;
-	background: none;
-	color: #fff;
-}
-
+/*Searcher*/
 header form {
 	width: 100%;
 	display: flex;
@@ -157,53 +116,6 @@ header .categorias li a.actual{
 	vertical-align: top;
 }
 
-/*Overlay*/
-.overlay{
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,.9);
-	width: 100%;
-	height: 100vh;
-	display: none;
-	align-items: center;
-	justify-content:center;
-}
-
-.overlay.active{
-	display: flex;
-}
-
-.overlay .wrapper-img{
-	display: flex;
-	flex-direction: column;
-	position: relative;
-}
-
-.overlay .wrapper-img .description{
-	display: block;
-	background-color: #fff;
-	padding: 20px;
-	text-align: center;
-	margin-top: 5px;
-	margin-left: 25%;
-	border-radius: 10px;
-	max-width: 50%;
-	
-}
-
-
-.overlay #btn-cerrar-popup{
-	background: none;
-	font-size: 20px;
-	color: #fff;
-	border: none;
-	cursor: pointer;
-	position: absolute;
-	right: 0;
-}
 
 /*Footer*/
 
