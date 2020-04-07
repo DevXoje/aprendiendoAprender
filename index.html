@@ -9,126 +9,129 @@
 </head>
 <body>
 	<main class="mainWrapper">
-
-		<header>
-			<hgroup class="logo">
-				<h1>Xoje Senpai</h1>				
-				<h2>Aprendedor</h2>
-			</hgroup>
-			<form action="">
-				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
-			</form>
-			<ul class="categorias" id="categorias">
-				<li><a class="actual" href="#">Todos</a></li>
-				<li><a href="#">Naturaleza</a></li>
-				<li><a href="#">Ciudades</a></li>
-				<li><a href="#">Personas</a></li>
-				<li><a href="#">Animales</a></li>
-			</ul>
-		</header>
-		<section class="grid" id="galery">
-			<article class="item"
-					data-category="ciudades"
-					data-keywords="dia coches calles"
-					data-descripcion="Aunque sea una putojoder">
-				<figure class="item-content">
-					<img src="./img/ciudad1.png" alt="">
+		<main class="wrapperContent">
+			<header>
+				<hgroup class="logo">
+					<h1>Xoje Senpai</h1>			
+					<h2>Aprendedor</h2>
+				</hgroup>
+				<form action="">
+					<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+				</form>
+				<ul class="categorias" id="categorias">
+					<li><a class="actual" href="#">Todos</a></li>
+					<li><a href="#">Naturaleza</a></li>
+					<li><a href="#">Ciudades</a></li>
+					<li><a href="#">Personas</a></li>
+					<li><a href="#">Animales</a></li>
+				</ul>
+			</header>
+			<section class="grid" id="galery">
+				<article class="item"
+						data-category="ciudades"
+						data-keywords="dia coches calles"
+						data-descripcion="Aunque sea una putojoder">
+					<figure class="item-content">
+						<img src="./img/galeria/ciudad1.png" alt="">
+					</figure>
+				</article>
+				<article class="item"
+						data-category="ciudades"
+						data-keywords="ciudades mar cielo"
+						data-descripcion="">
+					<figure class="item-content">
+						<img src="./img/galeria/ciudad2.png" alt="">
+					</figure>
+				</article>
+				<article class="item"
+						data-category="animales"
+						data-keywords="leon gatito salvaje"
+						data-descripcion="">
+					<figure class="item-content">
+						<img src="./img/galeria/animal1.png" alt="">
+					</figure>
+				</article>
+				<article class="item"
+						data-category="animales"
+						data-keywords="panda peluche bambu"
+						data-descripcion="">
+					<figure class="item-content">
+						<img src="./img/galeria/animal2.png" alt="">
+					</figure>
+				</article>
+				<article class="item"
+						data-category="naturaleza"
+						data-keywords="hojas verde salvaje"
+						data-descripcion="">
+					<figure class="item-content">
+						<img src="./img/galeria/naturaleza1.png" alt="">
+					</figure>
+				</article>
+				<article class="item"
+						data-category="naturaleza"
+						data-keywords="costa montanya mar"
+						data-descripcion="">
+					<figure class="item-content">
+						<img src="./img/galeria/paisaje1.png" alt="">
+					</figure>
+				</article>
+				<article class="item"
+						data-category="naturaleza"
+						data-keywords="montanya nubes verde"
+						data-descripcion="">
+					<figure class="item-content">
+						<img src="./img/galeria/paisaje2.png" alt="">
+					</figure>
+				</article>
+				<article class="item"
+						data-category="personas"
+						data-keywords="plano morena rosa"
+						data-descripcion="">
+					<figure class="item-content">
+						<img src="./img/galeria/persona1.png" alt="">
+					</figure>
+				</article>
+				<article class="item"
+						data-category="personas"
+						data-keywords="peliroja superior exterior"
+						data-descripcion="">
+					<figure class="item-content">
+						<img src="./img/galeria/persona2.png" alt="">
+					</figure>
+				</article>		
+			</section>
+			<section class="overlay " id="overlay">		
+				<figure class="wrapper-img">
+					<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+					<img src="" alt="">
+					<figcaption class="description"></figcaption>
 				</figure>
-			</article>
-			<article class="item"
-					data-category="ciudades"
-					data-keywords="ciudades mar cielo"
-					data-descripcion="">
-				<figure class="item-content">
-					<img src="./img/ciudad2.png" alt="">
-				</figure>
-			</article>
-			<article class="item"
-					data-category="animales"
-					data-keywords="leon gatito salvaje"
-					data-descripcion="">
-				<figure class="item-content">
-					<img src="./img/animal1.png" alt="">
-				</figure>
-			</article>
-			<article class="item"
-					data-category="animales"
-					data-keywords="panda peluche bambu"
-					data-descripcion="">
-				<figure class="item-content">
-					<img src="./img/animal2.png" alt="">
-				</figure>
-			</article>
-			<article class="item"
-					data-category="naturaleza"
-					data-keywords="hojas verde salvaje"
-					data-descripcion="">
-				<figure class="item-content">
-					<img src="./img/naturaleza1.png" alt="">
-				</figure>
-			</article>
-			<article class="item"
-					data-category="naturaleza"
-					data-keywords="costa montanya mar"
-					data-descripcion="">
-				<figure class="item-content">
-					<img src="./img/paisaje1.png" alt="">
-				</figure>
-			</article>
-			<article class="item"
-					data-category="naturaleza"
-					data-keywords="montanya nubes verde"
-					data-descripcion="">
-				<figure class="item-content">
-					<img src="./img/paisaje2.png" alt="">
-				</figure>
-			</article>
-			<article class="item"
-					data-category="personas"
-					data-keywords="plano morena rosa"
-					data-descripcion="">
-				<figure class="item-content">
-					<img src="./img/persona1.png" alt="">
-				</figure>
-			</article>
-			<article class="item"
-					data-category="personas"
-					data-keywords="peliroja superior exterior"
-					data-descripcion="">
-				<figure class="item-content">
-					<img src="./img/persona2.png" alt="">
-				</figure>
-			</article>		
-		</section>
-		<section class="overlay " id="overlay">		
-			<figure class="wrapper-img">
-				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
-				<img src="" alt="">
-				<figcaption class="description"></figcaption>
-			</figure>
-		</section>
-		<footer>
-			<div class="redes-sociales">
-				<div class="contenedor-icono">
-					<a class="twitter" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+			</section>
+			<footer>
+				<div class="redes-sociales">
+					<div class="contenedor-icono">
+						<a class="twitter" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+					</div>
+					<div class="contenedor-icono">
+						<a class="youtube" href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+					</div>
+					<div class="contenedor-icono">
+						<a class="twitch" href="#" target="_blank"><i class="fab fa-twitch"></i></a>
+					</div>
 				</div>
-				<div class="contenedor-icono">
-					<a class="youtube" href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+				<div class="autor">
+					<p>Sitio diseñado por mis <a href="#"><i class="fas fa-egg"></i><i class="fas fa-egg"></i></a>-<a href="https://devxoje.github.io/aprendiendoAprender/">Aprendiendo a Aprender</a></p>
 				</div>
-				<div class="contenedor-icono">
-					<a class="twitch" href="#" target="_blank"><i class="fab fa-twitch"></i></a>
-				</div>
-			</div>
-			<div class="autor">
-				<p>Sitio diseñado por mis <a href="#"><i class="fas fa-egg"></i><i class="fas fa-egg"></i></a>-<a href="https://devxoje.github.io/aprendiendoAprender/">Aprendiendo a Aprender</a></p>
-			</div>
-		</footer>
+			</footer>
+		</main>
+		
 	</main>
+	
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
 	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
 	<script src="./js/main.js"></script>
-	<script src="./js/galery.js"></script>
+	<script src="./js/overlay.js"></script>
 	<script src="./js/switch.js"></script>
 </body>
 </html>

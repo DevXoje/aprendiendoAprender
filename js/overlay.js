@@ -4,7 +4,7 @@
 		<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
 */
 
-opciones={
+var opciones={
 	layaout:{
 		rounding:false
 	}
@@ -15,6 +15,7 @@ window.addEventListener("load",mainGalery);
 
 
 function mainGalery() {
+	setStylesGalery();
 	grid.refreshItems().layout();
 
 	var wrapper=document.getElementById('galery');
@@ -33,6 +34,15 @@ function mainGalery() {
 	gestorOverlay(overlay);
 
 	
+}
+
+function setStylesGalery() {
+	var head  = document.getElementsByTagName('head')[0];
+    var link  = document.createElement('link');
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = './css/galery.css';
+    head.appendChild(link);
 }
 
 function filtrarPorCategoria(list=new NodeList()) {
