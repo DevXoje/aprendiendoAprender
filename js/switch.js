@@ -6,7 +6,8 @@ window.addEventListener("load",mainSwitch);
 
 function mainSwitch() {
 	setStylesSwitch();
-	const header=document.getElementsByTagName("hgroup")[0];
+	
+	const header=document.getElementById("nav-main");
 	
 	const btnSwitch=createBtnSwitch(header);
 
@@ -23,11 +24,14 @@ function mainSwitch() {
 }
 
 function setStylesSwitch() {
+	var path = window.location.pathname;
+	var page = path.split("/").pop();
+
 	var head  = document.getElementsByTagName('head')[0];
     var link  = document.createElement('link');
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = './css/switchModoNoche.css';
+    link.href =page=="index.html"?'./css/switchModoNoche.css':'../css/switchModoNoche.css';
     head.appendChild(link);
 }
 

@@ -5,6 +5,7 @@
 	position: absolute;
 	cursor: pointer;
 	display: flex;
+	right: 25px;
 	outline: none;
 }
 .switch::after{
