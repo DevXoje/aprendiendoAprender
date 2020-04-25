@@ -40,13 +40,13 @@ window.addEventListener("load",()=>{
 	linkItems[0].href=page=="index.html"?"#":"../index.html";
 	linkItems[0].innerHTML="Princial";
 
-	linkItems[1].href="#";
+	linkItems[1].href=page=="index.html"?"./html/#":"./#";
 	linkItems[1].innerHTML="La segunda";
 
-	linkItems[2].href=page=="index.html"?"./html/gallery.html":"#";
+	linkItems[2].href=page=="index.html"?"./html/gallery.html":"./gallery.html";
 	linkItems[2].innerHTML="Multimedia";
 
-	linkItems[3].href="#";
+	linkItems[3].href=page=="index.html"?"./html/contactUs.html":"./contactUs.html";
 	linkItems[3].innerHTML="Contacto";
 
 	listItems[0].appendChild(linkItems[0]);

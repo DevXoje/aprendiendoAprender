@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+:root{
+	--mainFontFamily:'Gotu', sans-serif;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background:url("../img/bg3.png");
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: var(--mainFontFamily);
+}
+
+.mainWrapper{
+	width: 90%;
+	max-width: 700px;
+	margin: auto;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.tarjeta{
+	background-color: #fff;
+	margin: 40px 0;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+/*Banner*/
+.slider_banner{
+	overflow: hidden;
+	z-index: 1000;
+	position: relative;
+}
+
+.slider_banner .banner{
+	position: relative;
+	width: 100%;
+	background-color: black;
+}
+
+.slider_banner .banner img{
+	vertical-align: top;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%;
+}
+
+.slider_banner .flecha-banner{
+	font-size: 35px;
+	line-height: 35px;
+	color: rgba(0,0,0,.2);
+	position: absolute;
+	top: 50%;
+	z-index: 1100;
+}
+
+.slider_banner .flecha-banner:hover{
+	color: rgba(0,0,0,.5);
+}
+
+.slider_banner .flecha-banner__izquierda{
+	left: 20px;
+}
+
+.slider_banner .flecha-banner__derecha{
+	right: 20px;
+}
+
+.irse.actual{
+	background-color: green;
+
+	animation: irse 2s forwards;
+}
+.venir.nueva{
+	background-color: red;
+
+	animation: iniciar 2s forwards;
+}
+.venir{
+	background-color: blue;
+	animation: iniciar 2s forwards;
+}
+
+@keyframes iniciar{
+	from{
+		left: 100%;	
+	}
+	to{
+		left: 0;
+	}
+}
+@keyframes irse{
+	from{
+		left: 0;
+	}
+	to{
+		left: -100%;
+	}
+}

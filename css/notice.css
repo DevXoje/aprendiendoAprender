@@ -68,7 +68,18 @@
 	padding: 90px 0 0 30px;
 	color: #fff;
 }
+.cards-banner-two{
+	width: 100%;
+	height: 350px;
+	background: url(../assets/img/notice/time-lapse-photo-of-stars-on-night.jpg)no-repeat center center/cover;
+	margin-bottom: 40px;
+}
 
+.cards-banner-two .content{
+	width: 40%;
+	padding: 90px 0 0 30px;
+	color: #fff;
+}
 .cards-banner-one h2,
 .cards-banner-one p{
 	margin: 10px 0 20px 0;
