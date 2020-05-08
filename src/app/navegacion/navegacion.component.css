@@ -1,0 +1,152 @@
+.nav-main{
+	font-size: 17px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	padding: 20px 0;
+}
+.nav-main ul{
+	display: flex;
+}
+
+.nav-main ul li{
+	padding: 10px;
+}
+.nav-main ul li a{
+	padding: 4px;
+}
+/*LOGO*/
+.nav-brand{
+	position: relative;
+	width: 50px;
+}
+/*Nav*/
+.nav-main ul.nav-menu{
+	flex: 1;
+	margin-left: 20px;
+}
+.nav-main ul.nav-menu li a:hover{
+	border-bottom: 2px solid #fff;
+}
+
+.btn-menu{
+	display: none;
+	position: absolute;
+	cursor: pointer;
+	top: 10px;
+	right: 30px;
+	z-index: 2px;
+	font-size: 1.5rem;
+}
+
+hr{
+	margin: 10px 0;
+}
+
+@media (max-width:700px){
+
+	.nav-main ul.nav-menu {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #2f3640;
+		height: 100%;
+		transform: translateX(-400px);
+		padding: 30px;
+		opacity: .9;
+		transition: transform .7s ease-in-out;
+	}
+	.nav-main ul.nav-menu li{
+		padding: 20px;
+		font-size: 14px;
+	}
+	.nav-main ul.nav-menu.show-slider-nav{
+		transform: translateX(-20px);
+	}
+	.btn-menu{
+		display: block;
+	}
+	.nav-icons{
+		margin-right: 50px;
+	}
+	
+}
+/*
+.nav-main{
+	font-size: 2em;
+	display: flex;
+	align-items: center;
+	height: 60px;
+	padding: 20px 0;
+}
+.nav-brand{
+	position: relative;
+	height: 50px;
+	width: 50px;
+}
+
+.nav-main ul.nav-menu-right{
+	display: flex;
+}
+.nav-main .nav-menu{
+	flex: 1;
+	margin-left: 20px;
+}
+
+
+.nav-main .nav-menu li{
+	padding: 20px;
+}
+.nav-main .nav-menu li a{
+	padding: 2px;
+}
+.nav-main .nav-menu li a:hover{
+	border-bottom: 2px solid #fff;
+}
+.menu-btn {
+	font-size: 1.5rem;
+	position: absolute;
+	cursor: pointer;
+	top:15px;
+	right: 130px;
+	display: none;
+	z-index: 2;
+}
+
+hr{
+	margin: 10px 0;
+}
+
+@media(max-width: 700px){
+
+	.menu-btn{
+		display: block;
+	}
+	.nav-main ul.nav-menu{
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #2f3640;
+		height: 100%;
+		padding: 30px;
+		opacity: 0.96;
+		transform: translateX(-400px);
+		transition: transform .5s ease-in-out;
+	}
+
+	.nav-main ul.nav-menu.show{
+		display: block;
+		transform: translateX(-20px);
+	}
+	.nav-main ul.nav-menu li{
+		padding: 20px;
+		font-size: 14px;
+	}
+
+	.nav-main ul.nav-menu-right{
+		margin: 40px;
+	}
+}*/

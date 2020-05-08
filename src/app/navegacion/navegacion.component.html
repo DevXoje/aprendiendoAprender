@@ -1,0 +1,34 @@
+<nav class="nav-main">
+	<img src="{{logoBurguer}}" alt="Logo AprendeAprender" class="nav-brand">
+	<ul class="nav-menu">
+		<li *ngFor="let link of enlaces">
+			<a routerLink="{{link.path}}" routerLinkActive="active">{{link.nombre}}</a>	
+		</li>
+	</ul>
+	<ul class="nav-icons">
+		<li>
+			<a href="#"><fa-icon [icon]="['fas', 'search']"></fa-icon></a>				
+		</li>
+		<li>
+			<div class="btn-menu" (click)="showSlider()">
+				<fa-icon [icon]="['fas', 'bars']"></fa-icon>
+			</div>	
+		</li>
+	</ul>
+</nav>
+<hr>
+
+
+
+<!--<nav id="nav-main" class="nav-main">
+	<img src="{{logoBurguer}}" class="nav-brand" alt="AprendeAprenderLogo">
+	<ul class="nav-menu-right">
+		<li *ngFor="let link of enlaces">
+			<a routerLink="{{link.path}}" routerLinkActive="active">{{link.nombre}}</a>	
+		</li>
+	</ul>
+	<--futura animacion para resolcines bajas
+	<div class="menu-btn"><i class="fas fa-bars"></i></div>
+	
+</nav>
+<hr>-->
